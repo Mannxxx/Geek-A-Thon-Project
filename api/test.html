@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="jap">
+<head>
+  <title>Video Upload</title>
+</head>
+<body>
+  <h1>Video Upload</h1>
+  <form action="http://localhost:8000/stream" method="post" enctype="multipart/form-data">
+    <label for="video">Select a video:</label>
+    <input type="file" id="video" name="video" accept="video/*" required><br>
+
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br>
+
+    <label for="description">Description:</label><br>
+    <textarea id="description" name="description" rows="4" cols="50" required></textarea><br>
+
+    <label for="privacy">Privacy:</label>
+    <select id="privacy" name="privacy" required>
+      <option value="public">Public</option>
+      <option value="private">Private</option>
+      <option value="unlisted">Unlisted</option>
+    </select><br>
+
+    <input type="submit" value="Upload">
+  </form>
+</body>
+</html>

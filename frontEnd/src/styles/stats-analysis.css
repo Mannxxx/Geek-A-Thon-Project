@@ -1,0 +1,9 @@
+.stats-analysis-links {
+    border-radius: 100;
+}
+
+.stats-analysis-links:hover,
+.stats-analysis-links:active {
+    border-radius: 100;
+    background-color: var(--primary-color);
+}

@@ -1,0 +1,6 @@
+class StatsException(Exception):
+    ...
+
+
+class JWTException(Exception):
+    ...
